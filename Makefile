@@ -7,8 +7,8 @@ test:
 	prove -r t
 
 try-luajit: all
-	cd openresty-`./util/ver` && ./configure --with-luajit
+	cd openresty-`./util/ver` && ./configure --prefix=/opt/openresty --with-luajit
 
 try-lua: all
-	cd openresty-`./util/ver` && ./configure && $(MAKE)
+	cd openresty-`./util/ver` && ./configure --prefix=/opt/openresty && $(MAKE)
 

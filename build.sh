@@ -2,8 +2,6 @@
 
 set -e
 
-./configure --prefix=/opt/nginx
-
-make
+make try-luajit
 
 echo "make done"
